@@ -1016,4 +1016,9 @@ object Prefs {
     var isReadingListsUpdateTooltipShown
         get() = PrefsIoUtil.getBoolean(R.string.preference_key_reading_lists_update_tooltip_shown, false)
         set(value) = PrefsIoUtil.setBoolean(R.string.preference_key_reading_lists_update_tooltip_shown, value)
+
+    var pinchToZoomEnabled
+        get() = PrefsIoUtil.getBoolean(R.string.preference_key_pinch_to_zoom_enabled, true)
+        set(value) = PrefsIoUtil.setBoolean(R.string.preference_key_pinch_to_zoom_enabled, value)
+
 }
